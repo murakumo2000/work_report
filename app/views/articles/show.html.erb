@@ -1,0 +1,64 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Regist date:</strong>
+  <%= @article.regist_date %>
+</p>
+
+<p>
+  <strong>Is homework:</strong>
+  <%= @article.is_homework %>
+</p>
+
+<p>
+  <strong>Is dog room:</strong>
+  <%= @article.is_dog_room %>
+</p>
+
+<p>
+  <strong>Is living room:</strong>
+  <%= @article.is_living_room %>
+</p>
+
+<p>
+  <strong>Is medicine:</strong>
+  <%= @article.is_medicine %>
+</p>
+
+<p>
+  <strong>Bedtime:</strong>
+  <%= @article.bedtime %>
+</p>
+
+<p>
+  <strong>Is laundry drying:</strong>
+  <%= @article.is_laundry_drying %>
+</p>
+
+<p>
+  <strong>Is laundry drying remain:</strong>
+  <%= @article.is_laundry_drying_remain %>
+</p>
+
+<p>
+  <strong>Is laundry tumbling:</strong>
+  <%= @article.is_laundry_tumbling %>
+</p>
+
+<p>
+  <strong>Is laundry tumbling remain:</strong>
+  <%= @article.is_laundry_tumbling_remain %>
+</p>
+
+<p>
+  <strong>Request:</strong>
+  <%= @article.request %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @article.user %>
+</p>
+
+<%= link_to 'Edit', edit_article_path(@article) %> |
+<%= link_to 'Back', articles_path %>

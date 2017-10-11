@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @user.name %>
+</p>
+
+<p>
+  <strong>Grade:</strong>
+  <%= @user.grade %>
+</p>
+
+<p>
+  <strong>Basecost:</strong>
+  <%= @user.basecost %>
+</p>
+
+<p>
+  <strong>Unitprice1:</strong>
+  <%= @user.unitprice1 %>
+</p>
+
+<p>
+  <strong>Unitprice2:</strong>
+  <%= @user.unitprice2 %>
+</p>
+
+<p>
+  <strong>Unitprice3:</strong>
+  <%= @user.unitprice3 %>
+</p>
+
+<p>
+  <strong>Unitprice4:</strong>
+  <%= @user.unitprice4 %>
+</p>
+
+<%= link_to 'Edit', edit_user_path(@user) %> |
+<%= link_to 'Back', users_path %>
