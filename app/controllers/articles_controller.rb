@@ -4,7 +4,13 @@ class ArticlesController < ApplicationController
   # GET /articles
   # GET /articles.json
   def index
-    @articles = Article.all
+    # ログインしていないユーザの場合は全て表示する
+    if session[:user_id]
+      @articles = Article.all
+    else
+      # ログインしているユーザの場合はユーザ分のみ表示する
+      @articles = Article.find_by(name: session[:name])
+    end
   end
 
   # GET /articles/1

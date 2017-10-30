@@ -1,0 +1,19 @@
+default: &default
+  adapter: postgresql
+  encoding: SQL_ASCII
+  pool: 5
+  username: ubuntu
+  password: password
+
+development:
+  <<: *default
+  database: work_report_development
+
+test:
+  <<: *default
+  database: work_report_test
+
+production:
+  <<: *default
+  encoding: unicode
+  database: work_report
